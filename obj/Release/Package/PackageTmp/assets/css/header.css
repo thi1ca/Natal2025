@@ -1,0 +1,160 @@
+ /* -----------HEADER PRINCIPAL----------- */
+ .opacity-0{
+    opacity: 0!important;
+}
+.top-main{
+    background-color: #BD1616;
+    padding: 15px 10px 5px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.top-main:after{
+    content: "";
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,100% 17px);
+    background: #BD1616;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    display: block;
+}
+.top-main img{
+    width: 30%;
+}
+.top-main img.open-icone,
+.top-main .navbar-collapse .perfil-menu img.open-icone{
+    width: 35px;
+}
+.top-main .navbar-collapse{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    max-width: 80%;
+    min-width: 80%;
+    z-index: 99;
+    height: 100vh;
+}
+.top-main .navbar-collapse .overlay-background{
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity ease .3s, left ease .3s;
+}
+.top-main .navbar-collapse .overlay-background.collapsed{
+    opacity: 0;
+    width: 100%;
+    transition: opacity ease .3s, left ease .3s;
+}
+.top-main .navbar-toggler{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index:5;
+    height: 65px;
+    /* transform: scale(0.7); */
+}
+.top-main .show .navbar-toggler.
+.top-main #navbarCollapse .navbar-toggler.collapsed{
+    position: relative;
+    right: inherit;
+    top: inherit;
+    padding: 0px;
+}
+.top-main .navbar-toggler.collapsed{
+    margin-top: 0px;
+}
+.top-main .navbar-toggler:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.top-main .navbar-collapse.collapsing {
+    right: -100%;
+    transition: height 0s ease;
+}
+.top-main.navbar-nav li ul {
+    list-style-type: none;
+}
+.top-main .navbar-collapse .nav-item a,
+.top-main .navbar-collapse .perfil-menu a{
+    /* color:#fff; */
+    font-weight: 400;
+}
+.top-main .navbar-collapse .nav-item.active a,
+.top-main .navbar-collapse .nav-item.active svg path{
+    /* color: #ff5101;
+    stroke: #ff5101;
+    fill: #ff5101; */
+    color: #BD1616;
+    stroke: #BD1616;
+    fill: #BD1616;
+}
+.top-main .navbar-collapse .nav-item a:hover{
+    transition: transform ease .3s;
+    transform: scale(1.1) translateX(10px);
+    opacity: 0.8;
+    color:#181945;
+}
+.top-main .navbar-collapse .nav-item a svg,
+.top-main .navbar-collapse .nav-item a svg{
+    width: 23px;
+    height: 33px;
+    margin-right: 5px;
+}
+.top-main .navbar-collapse .nav-item a.active{
+    color: #F44336;
+    /* transform: scale(1.1) translateX(10px); */
+    font-weight: 600;
+}
+.top-main .navbar-collapse.show{
+    right: 0;
+    transition: right 300ms ease-in-out;
+}
+.top-main .navbar-collapse .position-relative{
+    z-index: 12;
+    background: linear-gradient(0deg, rgba(211,212,219,1) 0%, rgba(225,238,245,1) 100%);
+    color: #fff;
+    padding: 25px;
+    height: 100vh;
+}
+.top-main .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: right 500ms ease-in-out;
+}
+.top-main .navbar-collapse .perfil-menu{
+    align-items: center;
+    justify-content: space-between;
+}
+.top-main .navbar-collapse .perfil-menu object{
+    width: 60px;
+    border-radius: 100px;
+    height: 60px;
+    /* background: url(../image/avatar.svg);
+    background-size: 100%;
+    background-repeat: no-repeat; */
+}
+.top-main .navbar-collapse .perfil-menu img{
+    width: 40px;
+}
+.top-main .navbar-collapse .perfil-menu h4{
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1rem;
+}
+.top-main .navbar-collapse .perfil-menu a{
+    text-decoration: none;
+}
+.top-main .navbar-collapse .box-name{
+    background: #c7c7c7;
+    padding: 15px 15px;
+    border-radius: 10px;
+}

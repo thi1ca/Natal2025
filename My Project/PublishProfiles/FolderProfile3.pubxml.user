@@ -1,0 +1,999 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Thiago\Desktop\Publish to Server\Natal</_PublishTargetUrl>
+    <History>True|2024-12-21T15:45:17.7707262Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="404-contact.html">
+      <publishTime>12/13/2024 11:26:35</publishTime>
+    </File>
+    <File Include="404.html">
+      <publishTime>11/27/2024 13:03:10</publishTime>
+    </File>
+    <File Include="accessCode.aspx">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="Adm/admClients.aspx">
+      <publishTime>11/18/2024 15:21:10</publishTime>
+    </File>
+    <File Include="Adm/admGraphs.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/admLogado.Master">
+      <publishTime>12/21/2024 09:22:21</publishTime>
+    </File>
+    <File Include="Adm/admUsers.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/admUsers_edit.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/admWhatsapp.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/cupomDeLoja.aspx">
+      <publishTime>12/01/2024 16:40:46</publishTime>
+    </File>
+    <File Include="Adm/cupomDeLojaReal.aspx">
+      <publishTime>12/03/2024 09:55:47</publishTime>
+    </File>
+    <File Include="Adm/dashboard.aspx">
+      <publishTime>12/21/2024 09:21:09</publishTime>
+    </File>
+    <File Include="Adm/excluiCPF.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/index.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Adm/regularizaNumeroDaSorte.aspx">
+      <publishTime>12/21/2024 09:53:07</publishTime>
+    </File>
+    <File Include="Adm/simulaCliente.aspx">
+      <publishTime>12/21/2024 16:21:34</publishTime>
+    </File>
+    <File Include="Adm/winner.aspx">
+      <publishTime>11/21/2024 10:51:42</publishTime>
+    </File>
+    <File Include="apply-coupon.aspx">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/Avatar/padrao.gif">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/Avatar/ThiagoBarrosPereira.JPG">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap-datepicker.min.css">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/css/bootstrap-float-label.min.css">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/css/style.css">
+      <publishTime>12/13/2024 10:57:21</publishTime>
+    </File>
+    <File Include="assets/css/styleAdm.css">
+      <publishTime>12/03/2024 09:55:47</publishTime>
+    </File>
+    <File Include="assets/css/style_antigo.css">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/css/style_antigo2.css">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/datepicker/css/datepicker.css">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/datepicker/js/bootstrap-datepicker.js">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/datepicker/less/datepicker.less">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/2_mil_cupons.png">
+      <publishTime>08/28/2024 16:13:53</publishTime>
+    </File>
+    <File Include="assets/image/404.png">
+      <publishTime>05/03/2024 11:46:56</publishTime>
+    </File>
+    <File Include="assets/image/404_contact.png">
+      <publishTime>05/08/2024 22:03:50</publishTime>
+    </File>
+    <File Include="assets/image/accordion-arrow-down.svg">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/adm/carro-byd-dolphin-mini.png">
+      <publishTime>11/14/2024 18:06:54</publishTime>
+    </File>
+    <File Include="assets/image/adm/como-funciona.png">
+      <publishTime>11/14/2024 18:56:10</publishTime>
+    </File>
+    <File Include="assets/image/adm/logo-dourado-torrapng.png">
+      <publishTime>11/14/2024 18:06:54</publishTime>
+    </File>
+    <File Include="assets/image/adm/Logo_pomocao_natal_Torra.png">
+      <publishTime>11/14/2024 18:06:54</publishTime>
+    </File>
+    <File Include="assets/image/app_google_play.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/app_store.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/arrow-close.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/arrow-down.svg">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/arrow-left-wt.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/arrow-left.svg">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/arrow-open.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar-adm.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar-default.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar-wt.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/avatar.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/award.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-blue-01.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-blue-02.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-blue-mobile.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-blue.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-natal.png">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-amarelo.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-azul.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-final.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-laranja.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-v2.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha-v2.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/background-raspadinha.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/banner-01.jpg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/bg-card-raspado.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/bg-card-raspado.webp">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/bg-natal.png">
+      <publishTime>09/14/2024 10:24:53</publishTime>
+    </File>
+    <File Include="assets/image/box-data.svg">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/box-imprimi.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/calendar.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/calendario.png">
+      <publishTime>11/14/2024 12:15:45</publishTime>
+    </File>
+    <File Include="assets/image/card-cpf.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/cart.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/cartao-torra.svg">
+      <publishTime>11/14/2024 12:15:45</publishTime>
+    </File>
+    <File Include="assets/image/chart-line.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/chart.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/clock.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/close.svg">
+      <publishTime>05/09/2024 21:07:56</publishTime>
+    </File>
+    <File Include="assets/image/copy.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/coroa.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/crown.png">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/dashboard.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/date-fill.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/date.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/duplicate.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/edit.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/effects-bg-blur-2.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/effects-bg-blur.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/effects-bg-wth-blur.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/email.svg">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/emails/banner.jpg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/botao.jpg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/facebook.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/instagram.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/linkedin.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/raspe-ganhe.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/torra.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/emails/youtube.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/error.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/estrela.svg">
+      <publishTime>11/14/2024 12:15:45</publishTime>
+    </File>
+    <File Include="assets/image/eye-hover.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/eye.svg">
+      <publishTime>04/09/2024 14:45:37</publishTime>
+    </File>
+    <File Include="assets/image/facebook.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/familia.png">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/filter.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/filtro-box.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/filtro-linha.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/gif-tour.gif">
+      <publishTime>05/09/2024 21:07:56</publishTime>
+    </File>
+    <File Include="assets/image/icon-bv.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-cancel.svg">
+      <publishTime>05/21/2024 10:27:39</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/bilhete.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/como-aplicar.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/ganhadores.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/icone-menu-close-hub.svg">
+      <publishTime>07/17/2024 11:36:26</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/icone-menu-close.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/icone-menu-open-hub.svg">
+      <publishTime>07/17/2024 11:36:26</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/icone-menu-open.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/sair.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-menu/termos.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/icon-park-outline_email-successfully.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/ic_baseline-whatsapp.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/imagem-ganhador-byd.png">
+      <publishTime>11/14/2024 12:15:45</publishTime>
+    </File>
+    <File Include="assets/image/img_carro.png">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/instagram.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/lets-icons_sad.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/linkedin.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/list.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/lock.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-nata-torra-h.svg">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/logo-nata-torra.svg">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="assets/image/logo-Raspe&amp;Ganhe-amarelo.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-Raspe&amp;Ganhe-azul.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-Raspe&amp;Ganhe.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-torra-rgb-.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-torra-rgb-195x195px.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo-torra.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Logo_Natal_Torra.svg">
+      <publishTime>09/19/2024 17:25:15</publishTime>
+    </File>
+    <File Include="assets/image/Logo_Raspe&amp;Ganhe.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/logo_top_promo.png">
+      <publishTime>11/12/2024 17:26:12</publishTime>
+    </File>
+    <File Include="assets/image/Logo_Torra_dourado.svg">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/Lojas-torra-impresso.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/mask.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Mobile-apply-cupom.gif">
+      <publishTime>04/25/2024 17:58:07</publishTime>
+    </File>
+    <File Include="assets/image/mobile-info-v2.gif">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/mobile-info.gif">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Mobile.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/nao-encontrado.png">
+      <publishTime>05/21/2024 10:27:39</publishTime>
+    </File>
+    <File Include="assets/image/natal.png">
+      <publishTime>09/14/2024 10:24:53</publishTime>
+    </File>
+    <File Include="assets/image/notification.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/option.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/order.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/out.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/paper-impress-mobile.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/paper-impress.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/people-new.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/people-three.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/people.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Perguntas_frequentes.svg">
+      <publishTime>11/12/2024 17:26:10</publishTime>
+    </File>
+    <File Include="assets/image/phone.svg">
+      <publishTime>11/12/2024 17:26:12</publishTime>
+    </File>
+    <File Include="assets/image/present.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Promo_Torra.png">
+      <publishTime>11/18/2024 18:10:25</publishTime>
+    </File>
+    <File Include="assets/image/qr-code-promo-natal.png">
+      <publishTime>11/18/2024 15:21:10</publishTime>
+    </File>
+    <File Include="assets/image/qr-code-promo-natal_final.png">
+      <publishTime>11/18/2024 15:51:24</publishTime>
+    </File>
+    <File Include="assets/image/qr-code-raspeganhe.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/raspe-ganhe-box-01.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/raspe-ganhe-box-02.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/raspeeganhe-inicio-fundo-v2.png">
+      <publishTime>08/28/2024 16:13:53</publishTime>
+    </File>
+    <File Include="assets/image/raspeeganhe-inicio-fundo.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/raspeeganhe-inicio-v2.png">
+      <publishTime>08/28/2024 16:13:53</publishTime>
+    </File>
+    <File Include="assets/image/raspeeganhe-inicio.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Raspe_&amp;_Ganhe.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Raspe_&amp;_Ganhe.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/Raspe_&amp;_Ganhe_page.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/sac.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/send.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/sprites.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-01-start.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-01.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-02-start.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-02.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-03-start.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/stap-03.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/star.svg">
+      <publishTime>04/16/2024 14:12:20</publishTime>
+    </File>
+    <File Include="assets/image/star_natal.svg">
+      <publishTime>11/12/2024 17:26:12</publishTime>
+    </File>
+    <File Include="assets/image/storytelling-01.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/storytelling-03-v2.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/storytelling-03.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/storytelling-04.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/t-shirt.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/ticket-erro.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/time-clock.svg">
+      <publishTime>05/12/2024 16:01:55</publishTime>
+    </File>
+    <File Include="assets/image/torra-rodape.png">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/touch-02.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/touch.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/trash.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/image/whatsapp.svg">
+      <publishTime>11/12/2024 17:26:12</publishTime>
+    </File>
+    <File Include="assets/image/youtube.svg">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/backbone-min.js">
+      <publishTime>05/07/2024 18:29:56</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-datepicker.min.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap-datepicker.pt-BR.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/chart.umd.min.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/confetti.min.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/jquery.email-autocomplete.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/jquery.mask.min.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/lodash.min.js">
+      <publishTime>05/07/2024 18:29:56</publishTime>
+    </File>
+    <File Include="assets/js/roulette.js">
+      <publishTime>05/07/2024 18:29:56</publishTime>
+    </File>
+    <File Include="assets/js/scratchCard.js">
+      <publishTime>04/09/2024 14:45:38</publishTime>
+    </File>
+    <File Include="assets/js/script.js">
+      <publishTime>11/18/2024 15:21:10</publishTime>
+    </File>
+    <File Include="assets/js/scriptAdm.js">
+      <publishTime>12/03/2024 09:55:47</publishTime>
+    </File>
+    <File Include="assets/js/velocity.min.js">
+      <publishTime>05/07/2024 18:29:56</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>04/09/2024 14:45:54</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>04/09/2024 14:45:54</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.bootstrap.dll">
+      <publishTime>04/09/2024 14:45:54</publishTime>
+    </File>
+    <File Include="bin/AspNet.ScriptManager.jQuery.dll">
+      <publishTime>04/09/2024 14:45:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/Natal_torra.dll">
+      <publishTime>12/21/2024 12:45:11</publishTime>
+    </File>
+    <File Include="bin/Natal_torra.pdb">
+      <publishTime>12/21/2024 12:45:11</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/09/2024 14:45:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>04/09/2024 14:45:55</publishTime>
+    </File>
+    <File Include="bin/WebForms_Basic.xml">
+      <publishTime>12/21/2024 12:45:11</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>04/09/2024 14:45:26</publishTime>
+    </File>
+    <File Include="comMenu.Master">
+      <publishTime>12/13/2024 11:38:50</publishTime>
+    </File>
+    <File Include="componentes/header.ascx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="componentes/menu.ascx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="componentes/rodape.ascx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="componentes/terms.ascx">
+      <publishTime>11/27/2024 13:03:10</publishTime>
+    </File>
+    <File Include="componentes/top.ascx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="confirm-register.aspx">
+      <publishTime>10/29/2024 22:00:29</publishTime>
+    </File>
+    <File Include="default.html">
+      <publishTime>11/27/2024 13:03:10</publishTime>
+    </File>
+    <File Include="frequently-questions.aspx">
+      <publishTime>11/14/2024 18:06:54</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="home.aspx">
+      <publishTime>11/18/2024 15:21:10</publishTime>
+    </File>
+    <File Include="index.aspx">
+      <publishTime>12/13/2024 10:20:35</publishTime>
+    </File>
+    <File Include="logoff.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="oAuth.aspx">
+      <publishTime>11/01/2024 16:38:56</publishTime>
+    </File>
+    <File Include="questions.aspx">
+      <publishTime>09/24/2024 19:19:11</publishTime>
+    </File>
+    <File Include="receive-coupon.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="register.aspx">
+      <publishTime>11/20/2024 21:31:55</publishTime>
+    </File>
+    <File Include="sac.aspx">
+      <publishTime>11/18/2024 16:16:49</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.map">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.slim.min.map">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>04/09/2024 14:46:01</publishTime>
+    </File>
+    <File Include="semMenu.Master">
+      <publishTime>12/13/2024 11:38:50</publishTime>
+    </File>
+    <File Include="terms.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="termsandprivacy.aspx">
+      <publishTime>09/15/2024 12:37:09</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/21/2024 12:45:12</publishTime>
+    </File>
+    <File Include="winners.aspx">
+      <publishTime>11/18/2024 15:21:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,184 @@
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Adm/admLogado.Master" CodeBehind="admPrizes.aspx.vb" Inherits="Torra.admPrizes" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <main role="main" class="container mb-5">
+        <section  class="mb-3 mb-md-5">
+            <div class="row mt-3 mt-md-5 align-items-center">
+                <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 text-left text-sm-left text-md-left text-lg-left text-xl-left">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb p-0 ">
+                            <li class="breadcrumb-item"><a href="dashboard.aspx">Dashboard</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Prêmios</li>
+                        </ol>
+                    </nav>
+                </div>
+
+
+
+
+
+
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-right text-sm-right text-md-right text-lg-right text-xl-right fixed-mobile">
+                    <div class="plus-bt">+</div>
+                    <asp:Button ID="butNew" runat="server" Text="+ Novo Prêmio" class="btn bt-blue text-uppercase" role="button"/>
+                    
+                </div>
+                <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 text-right text-sm-right text-md-right text-lg-right text-xl-right d-flex d-sm-none justify-content-end">
+                    <button type="submit" class="btn bt-save text-uppercase ml-3 btn-md d-flex d-sm-none justify-content-end">Filtrar</button>
+                </div>
+            </div>
+        </section>
+
+
+          <section class="create-page ">
+            <div class="formSetup" id="divFormulario" runat="server">
+                <div class="row no-gutters">
+                    <div class="col-12 form-group">
+                        <span class="has-float-label">
+                            <label for="nome" class="floatlabel">Nome do prêmio (Ex: Voucher R$50,00)</label>
+                            <asp:TextBox ID="tbNome" runat="server" class="form-control form-control-lg mb-3" type="text" MaxLength="100"></asp:TextBox>
+                        </span>
+                    </div> 
+
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left text-md-right">
+                        <div class="custom-control custom-switch custom-switch-md">
+                            <input type="checkbox" class="custom-control-input" checked id="cbVoucher" data-size="lg" runat="server">
+                            <label class="custom-control-label" for="ContentPlaceHolder1_cbAtivo2">Prêmio é um voucher?</label>
+                        </div>
+                    </div>
+
+                     <div class="col-12 form-group">
+                        <span class="has-float-label">
+                            <label for="voucher" class="floatlabel">Código do voucher (Somente se for disponibilizado imediatamente)</label>
+                            <asp:TextBox ID="tbVoucher" runat="server" class="form-control form-control-lg mb-3" type="text" MaxLength="100"></asp:TextBox>
+                        </span>
+                    </div> 
+
+                     <div class="col-12 form-group">
+                        <span class="has-float-label">
+                            <label for="codigo" class="floatlabel">Instruções de uso ou regras</label>
+                            <asp:TextBox ID="tbTexto" runat="server" class="form-control form-control-lg mb-3" type="text" MaxLength="100" TextMode="MultiLine" Rows="3"></asp:TextBox>
+                        </span>
+                    </div> 
+                    
+                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-0 pl-md-2 form-group">
+                        <span class="has-float-label">
+                            <div class="input-group select-mist mb-3">
+                                <asp:DropDownList ID="ddlCampanha" runat="server" class="custom-select"></asp:DropDownList>
+                               <label for="campanha">Selecione a campanha</label>
+                                <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button"><img src="../assets/image/arrow-down.svg" alt="" class="w-75"></button>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+
+
+                 </div>
+
+                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-left text-md-right">
+                        <div class="custom-control custom-switch custom-switch-md">
+                            <input type="checkbox" class="custom-control-input" checked id="cbAtivo" data-size="lg" runat="server">
+                            <label class="custom-control-label" for="ContentPlaceHolder1_cbAtivo2">Ativar Cadastro</label>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-left">
+                        <asp:Button ID="butCadastrar" runat="server" Text="SALVAR" class="btn bt-save text-uppercase mt-3 btn-md"></asp:Button>
+                        <asp:Button ID="butCancel" runat="server" Text="CANCELAR" class="btn bt-cancel text-uppercase mt-3 btn-md"></asp:Button>
+                        <asp:Button ID="butConfirmar" runat="server" Text="ATUALIZAR" class="btn btn-primary text-uppercase mt-3 btn-md"></asp:Button>
+                        <asp:TextBox ID="tbID" runat="server" Visible="false"></asp:TextBox>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="filter">
+            <div class="formSetup">
+                <div class="row">
+                    <div class="bt-filter col-4 col-sm-4 col-md-5 col-lg-5 col-lx-5 text-left">
+                        <h5 class="py-2 py-md-0"><img src="../assets/image/filter.svg" alt=""> Busca</h5>
+                        <div class="searchform">
+                            <asp:TextBox ID="tbNomeFiltro" runat="server" class="form-control filter-name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-mg" placeholder="Ex.: Nome do prêmio"></asp:TextBox>
+                        </div>
+                        <div class="result"></div>
+                    </div>
+                    <div class="filter-date col-4 col-sm-4 col-md-4 col-lg-4 col-lx-4 text-left">
+                     
+                    </div>
+                    <div class="filter-order col-4 col-sm-4 col-md-3 col-lg-3 col-lx-3">
+                        <h5 class="py-2 py-md-0"><img src="../assets/image/order.svg" alt=""> Ordenar</h5>
+                        <div class="select-radio text-rigth d-md-flex justify-content-end">
+                            <asp:DropDownList ID="ddlOrdenacao" runat="server" class="custom-select form-check" aria-label="Example select with button addon" AutoPostBack="True"></asp:DropDownList>
+                           
+                            <asp:Button ID="btnFiltrar" runat="server" Text="Filtrar" class="btn bt-save text-uppercase ml-3 btn-md d-none d-md-block" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="show-list">
+
+          
+                <asp:repeater id="Repeater1" runat="server" >
+					<ItemTemplate>
+            <div class="card rounded-5 mb-3 w-100 my-2">
+                <div class="row no-gutters <%# FunctionFundo(Container.DataItem("pre_ativo")) %>">
+                    <div class="box-img col-2 col-sm-2 col-md-2 col-lg-2 col-lx-2 border-right d-none d-sm-none d-md-flex d-lg-flex align-items-center justify-content-center">
+                       
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-lx-8 pl-0 pl-md-3">
+                        <div class="card-body pt-0 pb-3 px-3 py-md-4 px-md-4">
+                            <h5 class="card-title mb-0"><%# Container.DataItem("pre_nome") %></h5>
+                            <p class="card-text">Prêmio é um voucher? <%# FuncAtivo(Container.DataItem("pre_voucher"), 2) %></p>
+                            <div class="d-flex">
+                                <p class="card-text mr-3 mr-md-5 mb-0"><strong>Criado por:</strong><small class="text-muted d-block d-md-inline"> <%# Container.DataItem("cad_nome") %></small></p>
+                                <p class="card-text mr-3 mr-md-5 mb-0"><strong>Data:</strong><small class="text-muted  d-block d-md-inline"> <%# funcData(Container.DataItem("pre_data")) %></small></p>
+                                <p class="card-text mr-3 mr-md-5 mb-0"><strong>Status:</strong><small class="text-muted  d-block d-md-inline"> <%# funcAtivo(Container.DataItem("pre_ativo"), 1) %></small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-3 col-lx-2 py-1 px-3 p-md-4 text-left text-md-right order-first order-md-3">
+                        <h6 class="mt-2 mt-md-1">ID: 000<%# Container.DataItem("pre_id") %></h6>
+                        <div class="dropdown dropleft">
+                            <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/image/option.svg" alt="">
+                            </button>
+                            
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                             
+                              <a class="dropdown-item" href="admCalendar.aspx?preId=<%# Container.DataItem("pre_id") %>">Calendário de premiação</a>
+                              <asp:LinkButton ID="butEditar" runat="server" CssClass="dropdown-item" Text="Editar" CommandArgument='<%# Eval("cam_id") %>'></asp:LinkButton>
+                               <asp:LinkButton ID="butExcluir" runat="server" class="dropdown-item" CommandArgument='<%# Eval("cam_id") %>'>Desativar</asp:LinkButton>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                     </ItemTemplate>
+				</asp:repeater>
+             
+          
+            
+              
+
+            <nav class="pb-5 d-flex justify-content-center justify-content-md-between align-items-center" aria-label="Page navigation example">
+            <div class="desciption-pagination d-none d-md-block"><p>
+                <asp:Label ID="labTotal" runat="server" Text=""></asp:Label></p></div>
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <asp:LinkButton ID="butAnterior" class="page-link" runat="server">Anterior</asp:LinkButton>
+                </li>
+                
+                <li class="page-item"><asp:LinkButton ID="butProximo" class="page-link" runat="server">Próximo</asp:LinkButton>
+                
+                </li>
+            </ul>
+            </nav>
+            
+        </section>
+        
+    </main>
+</asp:Content>

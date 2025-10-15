@@ -1,0 +1,813 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Natal2025</RootNamespace>
+    <AssemblyName>Natal2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404-contact.html" />
+    <Content Include="404.html" />
+    <Content Include="accessCode.aspx" />
+    <Content Include="Adm\admGraphs.aspx" />
+    <Content Include="Adm\admWhatsapp.aspx" />
+    <Content Include="Adm\cupomDeLojaReal.aspx" />
+    <Content Include="Adm\excluiCPF.aspx" />
+    <Content Include="Adm\admClients.aspx" />
+    <Content Include="Adm\admUsers.aspx" />
+    <Content Include="Adm\admUsers_edit.aspx" />
+    <Content Include="Adm\regularizaNumeroDaSorte.aspx" />
+    <Content Include="Adm\simulaCliente.aspx" />
+    <Content Include="Adm\winner.aspx" />
+    <Content Include="assets\Avatar\ThiagoBarrosPereira.JPG" />
+    <Content Include="assets\css\header.css" />
+    <Content Include="assets\css\style_winning.css" />
+    <Content Include="assets\image\2_mil_cupons.png" />
+    <Content Include="assets\image\404.png" />
+    <Content Include="assets\image\404_contact.png" />
+    <Content Include="assets\image\accordion-arrow-down.svg" />
+    <Content Include="assets\image\adm\carro-byd-dolphin-mini.png" />
+    <Content Include="assets\image\adm\como-funciona.png" />
+    <Content Include="assets\image\adm\logo-dourado-torrapng.png" />
+    <Content Include="assets\image\adm\Logo_pomocao_natal_Torra.png" />
+    <Content Include="assets\image\app_google_play.png" />
+    <Content Include="assets\image\app_store.png" />
+    <Content Include="assets\image\avatar-adm.svg" />
+    <Content Include="assets\image\avatar-default.svg" />
+    <Content Include="assets\image\avatar.jpg" />
+    <Content Include="assets\image\background-blue-01.jpg" />
+    <Content Include="assets\image\background-blue-02.jpg" />
+    <Content Include="assets\image\background-blue-mobile.jpg" />
+    <Content Include="assets\image\background-blue.jpg" />
+    <Content Include="assets\image\background-natal.png" />
+    <Content Include="assets\image\background-raspadinha-final.svg" />
+    <Content Include="assets\image\background-raspadinha-laranja.svg" />
+    <Content Include="assets\image\background-raspadinha-v2.png" />
+    <Content Include="assets\image\background-raspadinha-v2.svg" />
+    <Content Include="assets\image\bg-natal.png" />
+    <Content Include="assets\image\box-data.svg" />
+    <Content Include="assets\image\box-imprimi.png" />
+    <Content Include="assets\image\calendar.svg" />
+    <Content Include="assets\image\calendario.png" />
+    <Content Include="assets\image\card-cpf.svg" />
+    <Content Include="assets\image\cart.svg" />
+    <Content Include="assets\image\cartao-torra.svg" />
+    <Content Include="assets\image\clock.svg" />
+    <Content Include="assets\image\close.svg" />
+    <Content Include="assets\image\coroa.png" />
+    <Content Include="assets\image\crown.png" />
+    <Content Include="assets\image\effects-bg-blur-2.svg" />
+    <Content Include="assets\image\effects-bg-blur.svg" />
+    <Content Include="assets\image\effects-bg-wth-blur.svg" />
+    <Content Include="assets\image\emails\banner.jpg" />
+    <Content Include="assets\image\emails\botao.jpg" />
+    <Content Include="assets\image\emails\facebook.png" />
+    <Content Include="assets\image\emails\instagram.png" />
+    <Content Include="assets\image\emails\linkedin.png" />
+    <Content Include="assets\image\emails\raspe-ganhe.png" />
+    <Content Include="assets\image\emails\torra.png" />
+    <Content Include="assets\image\emails\youtube.png" />
+    <Content Include="assets\image\error.svg" />
+    <Content Include="assets\image\estrela.svg" />
+    <Content Include="assets\image\eye-hover.svg" />
+    <Content Include="assets\image\familia.png" />
+    <Content Include="assets\image\filtro-linha.svg" />
+    <Content Include="assets\image\gif-tour.gif" />
+    <Content Include="assets\image\icon-bv.svg" />
+    <Content Include="assets\image\icon-cancel.svg" />
+    <Content Include="assets\image\icon-menu\bilhete.svg" />
+    <Content Include="assets\image\icon-menu\como-aplicar.svg" />
+    <Content Include="assets\image\icon-menu\ganhadores.svg" />
+    <Content Include="assets\image\icon-menu\icone-menu-close-hub.svg" />
+    <Content Include="assets\image\icon-menu\icone-menu-open-hub.svg" />
+    <Content Include="assets\image\icon-menu\sair.svg" />
+    <Content Include="assets\image\icon-menu\termos.svg" />
+    <Content Include="assets\image\icon-park-outline_email-successfully.svg" />
+    <Content Include="assets\image\ic_baseline-whatsapp.svg" />
+    <Content Include="assets\image\imagem-ganhador-byd.png" />
+    <Content Include="assets\image\imagem-gvencedor-byd.png" />
+    <Content Include="assets\image\img_carro.png" />
+    <Content Include="assets\image\lets-icons_sad.svg" />
+    <Content Include="assets\image\logo-nata-torra-h.svg" />
+    <Content Include="assets\image\logo-nata-torra.svg" />
+    <Content Include="assets\image\Logo_Natal_Torra.svg" />
+    <Content Include="assets\image\logo_top_promo.png" />
+    <Content Include="assets\image\Logo_Torra_dourado.svg" />
+    <Content Include="assets\image\Lojas-torra-impresso.png" />
+    <Content Include="assets\image\mask.svg" />
+    <Content Include="assets\image\Mobile-apply-cupom.gif" />
+    <Content Include="assets\image\mobile-info-v2.gif" />
+    <Content Include="assets\image\mobile-info.gif" />
+    <Content Include="assets\image\Mobile.png" />
+    <Content Include="assets\image\nao-encontrado.png" />
+    <Content Include="assets\image\natal.png" />
+    <Content Include="assets\image\notification.svg" />
+    <Content Include="assets\image\paper-impress-mobile.png" />
+    <Content Include="assets\image\paper-impress.png" />
+    <Content Include="assets\image\Perguntas_frequentes.svg" />
+    <Content Include="assets\image\Promo_Torra.png" />
+    <Content Include="assets\image\qr-code-promo-natal.png" />
+    <Content Include="assets\image\qr-code-promo-natal_final.png" />
+    <Content Include="assets\image\qr-code-raspeganhe.png" />
+    <Content Include="assets\image\raspe-ganhe-box-01.png" />
+    <Content Include="assets\image\raspe-ganhe-box-02.png" />
+    <Content Include="assets\image\raspeeganhe-inicio-fundo-v2.png" />
+    <Content Include="assets\image\raspeeganhe-inicio-fundo.png" />
+    <Content Include="assets\image\raspeeganhe-inicio-v2.png" />
+    <Content Include="assets\image\raspeeganhe-inicio.png" />
+    <Content Include="assets\image\Raspe_&amp;_Ganhe_page.png" />
+    <Content Include="assets\image\sac.svg" />
+    <Content Include="assets\image\send.svg" />
+    <Content Include="assets\image\stap-01-start.svg" />
+    <Content Include="assets\image\stap-01.svg" />
+    <Content Include="assets\image\stap-02-start.svg" />
+    <Content Include="assets\image\stap-02.svg" />
+    <Content Include="assets\image\stap-03-start.svg" />
+    <Content Include="assets\image\stap-03.svg" />
+    <Content Include="assets\image\star.svg" />
+    <Content Include="assets\image\star_natal.svg" />
+    <Content Include="assets\image\storytelling-01.png" />
+    <Content Include="assets\image\storytelling-03-v2.png" />
+    <Content Include="assets\image\storytelling-03.png" />
+    <Content Include="assets\image\storytelling-04.png" />
+    <Content Include="assets\image\time-clock.svg" />
+    <Content Include="assets\image\torra-rodape.png" />
+    <Content Include="assets\image\touch.svg" />
+    <Content Include="assets\image\trofeu.png" />
+    <Content Include="assets\image\whatsapp.svg" />
+    <Content Include="assets\js\backbone-min.js" />
+    <Content Include="assets\js\lodash.min.js" />
+    <Content Include="assets\js\roulette.js" />
+    <Content Include="assets\js\velocity.min.js" />
+    <Content Include="componentes\terms.ascx" />
+    <Content Include="Adm\cupomDeLoja.aspx" />
+    <Content Include="apply-coupon.aspx" />
+    <Content Include="assets\Avatar\padrao.gif" />
+    <Content Include="assets\css\bootstrap-datepicker.min.css" />
+    <Content Include="assets\css\bootstrap-float-label.min.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\styleAdm.css" />
+    <Content Include="assets\css\style_antigo2.css" />
+    <Content Include="assets\css\style_antigo.css" />
+    <Content Include="assets\datepicker\css\datepicker.css" />
+    <Content Include="assets\datepicker\js\bootstrap-datepicker.js" />
+    <Content Include="assets\image\arrow-close.svg" />
+    <Content Include="assets\image\arrow-down.svg" />
+    <Content Include="assets\image\arrow-left-wt.svg" />
+    <Content Include="assets\image\arrow-left.svg" />
+    <Content Include="assets\image\arrow-open.svg" />
+    <Content Include="assets\image\avatar-wt.svg" />
+    <Content Include="assets\image\avatar.png" />
+    <Content Include="assets\image\avatar.svg" />
+    <Content Include="assets\image\award.svg" />
+    <Content Include="assets\image\banner-01.jpg" />
+    <Content Include="assets\image\bg-card-raspado.png" />
+    <Content Include="assets\image\chart-line.svg" />
+    <Content Include="assets\image\chart.svg" />
+    <Content Include="assets\image\copy.svg" />
+    <Content Include="assets\image\dashboard.svg" />
+    <Content Include="assets\image\date-fill.svg" />
+    <Content Include="assets\image\date.svg" />
+    <Content Include="assets\image\duplicate.svg" />
+    <Content Include="assets\image\edit.svg" />
+    <Content Include="assets\image\email.svg" />
+    <Content Include="assets\image\eye.svg" />
+    <Content Include="assets\image\facebook.svg" />
+    <Content Include="assets\image\filter.svg" />
+    <Content Include="assets\image\filtro-box.svg" />
+    <Content Include="assets\image\icon-menu\icone-menu-close.svg" />
+    <Content Include="assets\image\icon-menu\icone-menu-open.svg" />
+    <Content Include="assets\image\instagram.svg" />
+    <Content Include="assets\image\linkedin.svg" />
+    <Content Include="assets\image\list.svg" />
+    <Content Include="assets\image\lock.svg" />
+    <Content Include="assets\image\logo-Raspe&amp;Ganhe-amarelo.svg" />
+    <Content Include="assets\image\logo-Raspe&amp;Ganhe-azul.svg" />
+    <Content Include="assets\image\logo-Raspe&amp;Ganhe.svg" />
+    <Content Include="assets\image\logo-torra-rgb-.svg" />
+    <Content Include="assets\image\logo-torra-rgb-195x195px.png" />
+    <Content Include="assets\image\logo-torra.svg" />
+    <Content Include="assets\image\Logo_Raspe&amp;Ganhe.svg" />
+    <Content Include="assets\image\option.svg" />
+    <Content Include="assets\image\order.svg" />
+    <Content Include="assets\image\out.svg" />
+    <Content Include="assets\image\people-new.svg" />
+    <Content Include="assets\image\people-three.svg" />
+    <Content Include="assets\image\people.svg" />
+    <Content Include="assets\image\phone.svg" />
+    <Content Include="assets\image\present.svg" />
+    <Content Include="assets\image\Raspe_&amp;_Ganhe.png" />
+    <Content Include="assets\image\Raspe_&amp;_Ganhe.svg" />
+    <Content Include="assets\image\sprites.svg" />
+    <Content Include="assets\image\t-shirt.svg" />
+    <Content Include="assets\image\ticket-erro.png" />
+    <Content Include="assets\image\touch-02.svg" />
+    <Content Include="assets\image\trash.svg" />
+    <Content Include="assets\image\youtube.svg" />
+    <Content Include="assets\js\bootstrap-datepicker.min.js" />
+    <Content Include="assets\js\bootstrap-datepicker.pt-BR.js" />
+    <Content Include="assets\js\chart.umd.min.js" />
+    <Content Include="assets\js\confetti.min.js" />
+    <Content Include="assets\js\jquery.email-autocomplete.js" />
+    <Content Include="assets\js\jquery.mask.min.js" />
+    <Content Include="assets\js\scratchCard.js" />
+    <Content Include="assets\js\script.js" />
+    <Content Include="assets\js\scriptAdm.js" />
+    <Content Include="confirm-register.aspx" />
+    <Content Include="default.html" />
+    <Content Include="end.html" />
+    <Content Include="frequently-questions.aspx" />
+    <Content Include="oAuth.aspx" />
+    <Content Include="receive-coupon.aspx" />
+    <Content Include="sac.aspx" />
+    <Content Include="termsandprivacy.aspx" />
+    <Content Include="teste.aspx" />
+    <Content Include="winners.aspx" />
+    <Content Include="componentes\header.ascx" />
+    <Content Include="componentes\menu.ascx" />
+    <Content Include="componentes\rodape.ascx" />
+    <Content Include="componentes\top.ascx" />
+    <Content Include="Adm\dashboard.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Adm\admLogado.Master" />
+    <Content Include="Adm\index.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="logoff.aspx" />
+    <Content Include="questions.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="assets\image\background-raspadinha-amarelo.png" />
+    <Content Include="assets\image\background-raspadinha-azul.png" />
+    <Content Include="assets\image\background-raspadinha.png" />
+    <Content Include="comMenu.Master" />
+    <Content Include="assets\image\bg-card-raspado.webp" />
+    <Content Include="winning.html" />
+    <None Include="Scripts\jquery-3.4.1-vsdoc.js" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="terms.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accessCode.aspx.designer.vb">
+      <DependentUpon>accessCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accessCode.aspx.vb">
+      <DependentUpon>accessCode.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admGraphs.aspx.designer.vb">
+      <DependentUpon>admGraphs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admGraphs.aspx.vb">
+      <DependentUpon>admGraphs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admWhatsapp.aspx.designer.vb">
+      <DependentUpon>admWhatsapp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admWhatsapp.aspx.vb">
+      <DependentUpon>admWhatsapp.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\cupomDeLojaReal.aspx.designer.vb">
+      <DependentUpon>cupomDeLojaReal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\cupomDeLojaReal.aspx.vb">
+      <DependentUpon>cupomDeLojaReal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\excluiCPF.aspx.designer.vb">
+      <DependentUpon>excluiCPF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\excluiCPF.aspx.vb">
+      <DependentUpon>excluiCPF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admClients.aspx.designer.vb">
+      <DependentUpon>admClients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admClients.aspx.vb">
+      <DependentUpon>admClients.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admLogado.Master.designer.vb">
+      <DependentUpon>admLogado.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admLogado.Master.vb">
+      <DependentUpon>admLogado.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admUsers.aspx.designer.vb">
+      <DependentUpon>admUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admUsers.aspx.vb">
+      <DependentUpon>admUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\admUsers_edit.aspx.designer.vb">
+      <DependentUpon>admUsers_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\admUsers_edit.aspx.vb">
+      <DependentUpon>admUsers_edit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\regularizaNumeroDaSorte.aspx.designer.vb">
+      <DependentUpon>regularizaNumeroDaSorte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\regularizaNumeroDaSorte.aspx.vb">
+      <DependentUpon>regularizaNumeroDaSorte.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\simulaCliente.aspx.designer.vb">
+      <DependentUpon>simulaCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\simulaCliente.aspx.vb">
+      <DependentUpon>simulaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Adm\winner.aspx.designer.vb">
+      <DependentUpon>winner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\winner.aspx.vb">
+      <DependentUpon>winner.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\Natal_regradenegocio.vb" />
+    <Compile Include="componentes\terms.ascx.designer.vb">
+      <DependentUpon>terms.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\terms.ascx.vb">
+      <DependentUpon>terms.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\cupomDeLoja.aspx.designer.vb">
+      <DependentUpon>cupomDeLoja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\cupomDeLoja.aspx.vb">
+      <DependentUpon>cupomDeLoja.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="apply-coupon.aspx.designer.vb">
+      <DependentUpon>apply-coupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="apply-coupon.aspx.vb">
+      <DependentUpon>apply-coupon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\ado.vb" />
+    <Compile Include="App_Start\banco.vb" />
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\container.vb" />
+    <Compile Include="App_Start\eMail.vb" />
+    <Compile Include="App_Start\funcoes.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="App_Start\whatsapp.vb" />
+    <Compile Include="confirm-register.aspx.designer.vb">
+      <DependentUpon>confirm-register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="confirm-register.aspx.vb">
+      <DependentUpon>confirm-register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="frequently-questions.aspx.designer.vb">
+      <DependentUpon>frequently-questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frequently-questions.aspx.vb">
+      <DependentUpon>frequently-questions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="oAuth.aspx.designer.vb">
+      <DependentUpon>oAuth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="oAuth.aspx.vb">
+      <DependentUpon>oAuth.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="receive-coupon.aspx.designer.vb">
+      <DependentUpon>receive-coupon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="receive-coupon.aspx.vb">
+      <DependentUpon>receive-coupon.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="sac.aspx.designer.vb">
+      <DependentUpon>sac.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sac.aspx.vb">
+      <DependentUpon>sac.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="termsandprivacy.aspx.designer.vb">
+      <DependentUpon>termsandprivacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="termsandprivacy.aspx.vb">
+      <DependentUpon>termsandprivacy.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="teste.aspx.designer.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teste.aspx.vb">
+      <DependentUpon>teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="winners.aspx.designer.vb">
+      <DependentUpon>winners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="winners.aspx.vb">
+      <DependentUpon>winners.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="comMenu.Master.designer.vb">
+      <DependentUpon>comMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="comMenu.Master.vb">
+      <DependentUpon>comMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="componentes\header.ascx.designer.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\header.ascx.vb">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="componentes\menu.ascx.designer.vb">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\menu.ascx.vb">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="componentes\rodape.ascx.designer.vb">
+      <DependentUpon>rodape.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\rodape.ascx.vb">
+      <DependentUpon>rodape.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="componentes\top.ascx.designer.vb">
+      <DependentUpon>top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="componentes\top.ascx.vb">
+      <DependentUpon>top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adm\dashboard.aspx.designer.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\dashboard.aspx.vb">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adm\index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.vb">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.vb">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="logoff.aspx.designer.vb">
+      <DependentUpon>logoff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logoff.aspx.vb">
+      <DependentUpon>logoff.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="questions.aspx.designer.vb">
+      <DependentUpon>questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="questions.aspx.vb">
+      <DependentUpon>questions.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="semMenu.Master.designer.vb">
+      <DependentUpon>semMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="semMenu.Master.vb">
+      <DependentUpon>semMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="terms.aspx.designer.vb">
+      <DependentUpon>terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="terms.aspx.vb">
+      <DependentUpon>terms.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\datepicker\less\datepicker.less" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="semMenu.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61010</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4356/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
